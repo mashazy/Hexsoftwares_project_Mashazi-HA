@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #8fdbd5e1;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Layout for image + about */
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 20px;
+        }
+
+        /* Profile Image */
+        .profile-container img {
+            width:200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 3px 5px rgba(17, 113, 168, 0.3);
+
+            /* Animation */
+            animation:  bounce 1.5s ease;
+        }
+
+        /* Sections */
+        section {
+            padding:10px;
+            margin: 10px;
+            background: #fff;
+            border-radius: 8px;
+        }
+
+        /* About text animation */
+        #bio {
+            max-width: 500px;
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        /* Skills */
+        #skills ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        /* Contact */
+        #contact p {
+            margin: 5px 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            section {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Mashazi Hlengiwe Anele</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <!-- About + Image -->
+    <div class="about-container">
+
+        <div class="profile-container">
+    <img src="anele.jpeg" alt="Mashazi Hlengiwe Anele">
+</div>
+        <section id="bio">
+            <h2>About Me</h2>
+            <p>
+                My name is Mashazi Hlengiwe Anele. I am a recent graduate from Durban University of Technology in South Africa.
+                An entry individual with proactive mindset,seeking a popsition to kickstart a career in ICT.
+                Eager to apply academic learning ,adapt quicklyand contribute effectively to a dynamic team.
+                With this project I am looking forward to gain more experince in the field as I also am still learning other programming languages like C++ and fluent in Java,Python.
+
+            </p>
+        </section>
+
+    </div>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Agile methodologies</li>
+            <li>Java</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: mashzy2001@gmail.com</p>
+        <p>Phone:0661616104,0793941346</p>
+        <p>Home Address:Tembisa,2243 Mocheko Street Ivory Score</p>
+        <p>
+            <a href="https://www.linkedin.com/in/anele-hlengiwe-mashazi-b85b50200?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+    Go to LinkedIn
+</a>
+                Go to LinkedIn
+            </a>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p >  @Mashazi HA</p>
+
+    </footer>
+
+</body>
+
+</html>
